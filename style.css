@@ -6,15 +6,15 @@ body {
 }
 
 header {
-    border-bottom: solid 2px red; /* Mudado para vermelho */
+    border-bottom: solid 2px red;
     padding: 20px;
     font-size: 33px;
-    color: red; /* Mudado para vermelho */
-    text-align: center; /* Centralizado o texto */
+    color: red;
+    text-align: center;
 }
 
 .chamada {
-    background: rgb(42, 42, 42); /* Cor de fundo mais escura */
+    background: rgb(42, 42, 42);
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -22,67 +22,87 @@ header {
 }
 
 .chamada-texto {
-    margin-bottom: 20px; /* Espaçamento entre texto e vídeo */
+    margin-bottom: 20px;
     text-align: center;
 }
 
 h1 {
     font-size: 40px;
-    color: red; /* Mudado para vermelho */
+    color: red;
+    font-weight: 600; /* Título com peso maior */
 }
 
 p {
     font-size: 20px;
+    font-weight: 300; /* Texto mais leve */
 }
 
 .video-container {
     width: 100%;
-    max-width: 560px; /* Largura máxima do iframe */
-    border: 2px solid red; /* Borda vermelha */
-    border-radius: 8px; /* Bordas arredondadas */
-    overflow: hidden; /* Arredondamento de borda */
+    max-width: 560px;
+    border: 2px solid red;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 iframe {
-    width: 100%; /* Faz o iframe ocupar 100% da largura do contêiner */
+    width: 100%;
     height: 315px;
 }
 
 .categoria {
-    padding: 20px; /* Espaçamento da categoria */
+    padding: 20px;
     margin-top: 50px;
-    text-align: center; /* Centraliza o título */
+    text-align: center;
 }
 
 .categoria h2 {
-    color: red; /* Mudado para vermelho */
+    color: red;
 }
 
 .categoria-videos {
     display: flex;
     overflow-x: auto;
     gap: 10px;
-    padding: 10px 0; /* Adiciona espaçamento em cima e embaixo */
-    scrollbar-width: thin; /* Para navegadores Firefox */
+    padding: 10px 0;
+    scrollbar-width: thin;
 }
 
 .categoria-videos::-webkit-scrollbar {
-    height: 8px; /* Altura da barra de rolagem */
+    height: 8px;
 }
 
 .categoria-videos::-webkit-scrollbar-thumb {
-    background: red; /* Cor da barra de rolagem */
-    border-radius: 10px; /* Bordas arredondadas da barra */
+    background: red;
+    border-radius: 10px;
 }
 
 .categoria-videos img {
     height: 200px;
-    border: 2px solid transparent; /* Borda padrão */
-    border-radius: 5px; /* Bordas arredondadas */
-    transition: border 0.3s ease; /* Transição suave para a borda */
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: border 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Suavidade */
 }
 
 .categoria-videos img:hover {
     opacity: 1.0;
-    border: 2px solid red; /* Borda vermelha ao passar o mouse */
+    border: 2px solid red;
+    transform: scale(1.05); /* Efeito de zoom */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Sombra suave vermelha */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .categoria-videos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .video-container {
+        max-width: 100%; /* Ajusta o vídeo para telas menores */
+    }
+
+    h1 {
+        font-size: 32px; /* Reduz tamanho do título em telas menores */
+    }
 }
