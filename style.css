@@ -1,64 +1,88 @@
 body {
     color: white;
     background: black;
-    margin: 0px;
+    margin: 0;
     font-family: "Chakra Petch", sans-serif;
-    margin-bottom: 100px;
 }
 
 header {
-    border-bottom: solid 2px rgb(42, 122, 228);
+    border-bottom: solid 2px red; /* Mudado para vermelho */
     padding: 20px;
     font-size: 33px;
-    color: rgb(42, 122, 228);
+    color: red; /* Mudado para vermelho */
+    text-align: center; /* Centralizado o texto */
 }
 
 .chamada {
-    background: rgb(46, 94, 159);
-    padding-bottom: 80px;
-    padding-top: 80px;
+    background: rgb(42, 42, 42); /* Cor de fundo mais escura */
+    padding: 40px 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .chamada-texto {
-    margin-right: 5%;
+    margin-bottom: 20px; /* Espaçamento entre texto e vídeo */
+    text-align: center;
 }
 
 h1 {
     font-size: 40px;
+    color: red; /* Mudado para vermelho */
 }
 
 p {
     font-size: 20px;
 }
 
-img {
-    height: 200px;
+.video-container {
+    width: 100%;
+    max-width: 560px; /* Largura máxima do iframe */
+    border: 2px solid red; /* Borda vermelha */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Arredondamento de borda */
+}
+
+iframe {
+    width: 100%; /* Faz o iframe ocupar 100% da largura do contêiner */
+    height: 315px;
+}
+
+.categoria {
+    padding: 20px; /* Espaçamento da categoria */
+    margin-top: 50px;
+    text-align: center; /* Centraliza o título */
+}
+
+.categoria h2 {
+    color: red; /* Mudado para vermelho */
 }
 
 .categoria-videos {
     display: flex;
     overflow-x: auto;
     gap: 10px;
+    padding: 10px 0; /* Adiciona espaçamento em cima e embaixo */
+    scrollbar-width: thin; /* Para navegadores Firefox */
 }
 
-.categoria {
-    padding-left: 20x;
-    padding-right: 20px;
-    margin-top: 50px;
+.categoria-videos::-webkit-scrollbar {
+    height: 8px; /* Altura da barra de rolagem */
+}
+
+.categoria-videos::-webkit-scrollbar-thumb {
+    background: red; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas da barra */
 }
 
 .categoria-videos img {
-    opacity: 0.5;
     height: 200px;
+    border: 2px solid transparent; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: border 0.3s ease; /* Transição suave para a borda */
 }
 
 .categoria-videos img:hover {
     opacity: 1.0;
-    border: 1px solid green;
-}
-
-.categoria h2 {
-    color: rgb(42, 122, 228);
+    border: 2px solid red; /* Borda vermelha ao passar o mouse */
 }
