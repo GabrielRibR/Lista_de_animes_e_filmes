@@ -16,12 +16,12 @@
 
     <section class="chamada">
         <div class="chamada-texto">
-            <h1>100 NOVOS SEGREDOS DE ONE PIECE</h1>
-            <p>#Curiosidades</p>
+            <h1 id="video-title">100 NOVOS SEGREDOS DE ONE PIECE</h1>
+            <p id="video-tag">#Curiosidades</p>
         </div>
 
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/kH321bNW_mk?si=e83huUa6m7RWcSOx"
+            <iframe id="main-video" width="560" height="315" src="https://www.youtube.com/embed/kH321bNW_mk?si=e83huUa6m7RWcSOx"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -31,48 +31,46 @@
     <section class="categoria">
         <h2>Animes e Séries</h2>
         <div class="categoria-videos">
-            <a href="https://youtu.be/V3jCQI-x5yk?si=yMZseJV8gGRTbdko">
-                <img src="https://img.youtube.com/vi/V3jCQI-x5yk/maxresdefault.jpg" alt="Thumbnail do vídeo">
+            <a href="https://youtu.be/V3jCQI-x5yk?si=yMZseJV8gGRTbdko" onclick="changeVideo('https://youtu.be/V3jCQI-x5yk?si=yMZseJV8gGRTbdko', 'V3jCQI-x5yk', 'Thumbnail do vídeo 1')">
+                <img src="https://img.youtube.com/vi/V3jCQI-x5yk/maxresdefault.jpg" alt="Thumbnail do vídeo 1">
             </a>
-            <a href="https://youtu.be/2rjXvCFEGcw?si=l6H3pw9J52b2Idph">
-                <img src="https://img.youtube.com/vi/2rjXvCFEGcw/maxresdefault.jpg" alt="Thumbnail do vídeo"/>
+            <a href="https://youtu.be/2rjXvCFEGcw?si=l6H3pw9J52b2Idph" onclick="changeVideo('https://youtu.be/2rjXvCFEGcw?si=l6H3pw9J52b2Idph', '2rjXvCFEGcw', 'Thumbnail do vídeo 2')">
+                <img src="https://img.youtube.com/vi/2rjXvCFEGcw/maxresdefault.jpg" alt="Thumbnail do vídeo 2"/>
             </a>
-            <a href="https://www.youtube.com/watch?v=rMj5V2lKRWA">
-                <img src="https://img.youtube.com/vi/rMj5V2lKRWA/maxresdefault.jpg" alt="Thumbnail do vídeo"/>
+            <a href="https://www.youtube.com/watch?v=rMj5V2lKRWA" onclick="changeVideo('https://www.youtube.com/watch?v=rMj5V2lKRWA', 'rMj5V2lKRWA', 'Thumbnail do vídeo 3')">
+                <img src="https://img.youtube.com/vi/rMj5V2lKRWA/maxresdefault.jpg" alt="Thumbnail do vídeo 3"/>
             </a>
-            <a href="https://www.youtube.com/watch?v=LQ69aHTVSYg" target="_blank">
-                <img src="https://img.youtube.com/vi/LQ69aHTVSYg/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=LQ69aHTVSYg" onclick="changeVideo('https://www.youtube.com/watch?v=LQ69aHTVSYg', 'LQ69aHTVSYg', 'Thumbnail do vídeo 4')">
+                <img src="https://img.youtube.com/vi/LQ69aHTVSYg/maxresdefault.jpg" alt="Thumbnail do vídeo 4" />
             </a>
-            <a href="https://www.youtube.com/watch?v=I-t4PJKrb3A">
-                <img src="https://img.youtube.com/vi/I-t4PJKrb3A/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=I-t4PJKrb3A" onclick="changeVideo('https://www.youtube.com/watch?v=I-t4PJKrb3A', 'I-t4PJKrb3A', 'Thumbnail do vídeo 5')">
+                <img src="https://img.youtube.com/vi/I-t4PJKrb3A/maxresdefault.jpg" alt="Thumbnail do vídeo 5" />
             </a>
-            <a href="https://www.youtube.com/watch?v=iqyIjF8yudc">
-                <img src="https://img.youtube.com/vi/iqyIjF8yudc/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=iqyIjF8yudc" onclick="changeVideo('https://www.youtube.com/watch?v=iqyIjF8yudc', 'iqyIjF8yudc', 'Thumbnail do vídeo 6')">
+                <img src="https://img.youtube.com/vi/iqyIjF8yudc/maxresdefault.jpg" alt="Thumbnail do vídeo 6" />
             </a>
-            <a href="https://www.youtube.com/watch?v=w7O2DOCil8I">
-                <img src="https://img.youtube.com/vi/w7O2DOCil8I/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=w7O2DOCil8I" onclick="changeVideo('https://www.youtube.com/watch?v=w7O2DOCil8I', 'w7O2DOCil8I', 'Thumbnail do vídeo 7')">
+                <img src="https://img.youtube.com/vi/w7O2DOCil8I/maxresdefault.jpg" alt="Thumbnail do vídeo 7" />
             </a>
-            <a href="https://www.youtube.com/watch?v=opAbMbgdl00">
-                <img src="https://img.youtube.com/vi/opAbMbgdl00/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=opAbMbgdl00" onclick="changeVideo('https://www.youtube.com/watch?v=opAbMbgdl00', 'opAbMbgdl00', 'Thumbnail do vídeo 8')">
+                <img src="https://img.youtube.com/vi/opAbMbgdl00/maxresdefault.jpg" alt="Thumbnail do vídeo 8" />
             </a>
-            <a href="https://www.youtube.com/watch?v=FMvTbJ_DBJM">
-                <img src="https://img.youtube.com/vi/FMvTbJ_DBJM/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=FMvTbJ_DBJM" onclick="changeVideo('https://www.youtube.com/watch?v=FMvTbJ_DBJM', 'FMvTbJ_DBJM', 'Thumbnail do vídeo 9')">
+                <img src="https://img.youtube.com/vi/FMvTbJ_DBJM/maxresdefault.jpg" alt="Thumbnail do vídeo 9" />
             </a>
-            <a href="https://www.youtube.com/watch?v=XuhV9_95IjM">
-                <img src="https://img.youtube.com/vi/XuhV9_95IjM/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=XuhV9_95IjM" onclick="changeVideo('https://www.youtube.com/watch?v=XuhV9_95IjM', 'XuhV9_95IjM', 'Thumbnail do vídeo 10')">
+                <img src="https://img.youtube.com/vi/XuhV9_95IjM/maxresdefault.jpg" alt="Thumbnail do vídeo 10" />
             </a>
-            <a href="https://www.youtube.com/watch?v=aZpbIsqP4EE">
-                <img src="https://img.youtube.com/vi/aZpbIsqP4EE/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=aZpbIsqP4EE" onclick="changeVideo('https://www.youtube.com/watch?v=aZpbIsqP4EE', 'aZpbIsqP4EE', 'Thumbnail do vídeo 11')">
+                <img src="https://img.youtube.com/vi/aZpbIsqP4EE/maxresdefault.jpg" alt="Thumbnail do vídeo 11" />
             </a>
-            <a href="https://www.youtube.com/watch?v=xoMyD3gpabk">
-                <img src="https://img.youtube.com/vi/xoMyD3gpabk/maxresdefault.jpg" alt="Descrição do vídeo" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=dzvnMDP4D0E">
-                <img src="https://img.youtube.com/vi/dzvnMDP4D0E/maxresdefault.jpg" alt="Descrição do vídeo" />
+            <a href="https://www.youtube.com/watch?v=xoMyD3gpabk" onclick="changeVideo('https://www.youtube.com/watch?v=xoMyD3gpabk', 'xoMyD3gpabk', 'Thumbnail do vídeo 12')">
+                <img src="https://img.youtube.com/vi/xoMyD3gpabk/maxresdefault.jpg" alt="Thumbnail do vídeo 12" />
             </a>
         </div>
     </section>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
